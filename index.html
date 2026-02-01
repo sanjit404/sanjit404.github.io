@@ -1,96 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjit404</title>
+    <title>Sanjit404 - Protfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cursor-follower"></div>
-    <div class="cursor-dot"></div>
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+    </div>
 
-    <nav class="navbar">
-        <div class="nav-brand">
-            <span class="brand-text">sanjit404</span>
-            <span class="brand-year">2026</span>
-        </div>
-        <div class="nav-links">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <div class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="scroll-progress"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <span class="brand-icon">✨</span>
+                <span class="brand-text">sanjit404</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">
+                    <span class="link-text">Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="link-text">About</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <span class="link-text">Projects</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <span class="link-text">Skills</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="link-text">Contact</span>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-            <div class="noise"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-up">
+                    <span class="badge-dot"></span>
+                    <span>Available for freelance</span>
+                </div>
+                
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    <span class="title-greeting">Hi, I'm</span>
+                    <span class="title-name">Sanjit Poudel</span>
+                    <span class="title-subtitle">Developer & Designer</span>
+                </h1>
+                
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                    I craft exceptional digital experiences that combine cutting-edge technology 
+                    with stunning design. Specializing in web/app development and UI/UX design.
+                </p>
+                
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get in Touch</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                <div class="visual-card">
+                    <div class="card-glow"></div>
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-body">
+                            <code>
+                                <span class="purple">const</span> <span class="blue">developer</span> = {<br>
+                                &nbsp;&nbsp;name: <span class="green">'Sanjit Poudel'</span>,<br>
+                                &nbsp;&nbsp;location: <span class="green">'Kathmandu, Nepal'</span>,<br>
+                                &nbsp;&nbsp;skills: [<span class="green">'Web'</span>, <span class="green">'Mobile'</span>, <span class="green">'Design'</span>],<br>
+                                &nbsp;&nbsp;passion: <span class="green">'Building amazing things'</span><br>
+                                };
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hero-content">
-            <div class="hero-tag">Tech Enthusiast</div>
-            <h1 class="hero-title">
-                <span class="title-line">Hello, I'm</span>
-                <span class="title-line title-name">Sanjit</span>
-            </h1>
-            <p class="hero-description">
-                I craft digital experiences that blend creativity with functionality.
-                Specializing in modern web/app development and stunning user interfaces.
-            </p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
-            <div class="scroll-indicator">
-                <span>Scroll to explore</span>
-                <div class="scroll-arrow"></div>
-            </div>
+            <span>Scroll Down</span>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-number">01</span>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Get To Know Me</span>
                 <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
             </div>
+            
             <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">I'm a passionate developer who loves turning complex problems into simple, beautiful, and intuitive solutions.</p>
-                    <p>With years of experience in web development, I've worked on diverse projects ranging from sleek landing pages to complex web applications. My approach combines technical expertise with a keen eye for design, ensuring that every project not only works flawlessly but also looks stunning.</p>
-                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                <div class="about-text" data-aos="fade-right">
+                    <p class="lead">
+                        I'm a passionate developer who transforms complex challenges into elegant, 
+                        user-friendly solutions that people love to use.
+                    </p>
+                    
+                    <p>
+                        With over 5 years of experience in web and mobile development, I've helped 
+                        businesses and startups bring their digital visions to life. My expertise 
+                        spans from crafting responsive websites to building powerful mobile applications.
+                    </p>
+                    
+                    <p>
+                        I believe in writing clean, maintainable code and creating designs that not 
+                        only look beautiful but also provide exceptional user experiences. When I'm 
+                        not coding, you'll find me exploring new technologies, contributing to 
+                        open-source projects, or sharing knowledge with the dev community.
+                    </p>
+                    
                     <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">20+</div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🚀</div>
+                            <div class="stat-value" data-target="20">0</div>
                             <div class="stat-label">Projects Completed</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">8+</div>
+                        <div class="stat-card">
+                            <div class="stat-icon">😊</div>
+                            <div class="stat-value" data-target="8">0</div>
                             <div class="stat-label">Happy Clients</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">5+</div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⚡</div>
+                            <div class="stat-value" data-target="5">0</div>
                             <div class="stat-label">Years Experience</div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-frame">
-                        <div class="image-placeholder">
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="100" cy="80" r="40" fill="currentColor" opacity="0.3"/>
-                                <rect x="60" y="130" width="80" height="70" rx="10" fill="currentColor" opacity="0.3"/>
-                            </svg>
+                
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <div class="profile-card">
+                            <div class="profile-icon">👨‍💻</div>
                         </div>
                     </div>
                 </div>
@@ -100,128 +198,172 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
-                <span class="section-number">02</span>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">My Work</span>
                 <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
             </div>
+            
             <div class="projects-grid">
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <span class="project-icon">🌐🛒</span>
+                <div class="project-card" data-aos="fade-up">
+                    <a href="https://juttaghar.infinityfree.me" target="_blank" class="project-image">
+                        <div class="project-overlay"></div>
+                        <img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23grad1)'/%3E%3Ctext x='50%25' y='50%25' font-size='60' text-anchor='middle' dy='.3em'%3E🌐🛒%3C/text%3E%3C/svg%3E" alt="E-Commerce Platform">
+                        <div class="project-link">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://juttaghar.infinityfree.me" class="project-link">View Project →</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
+                    </a>
+                    <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">PHP</span>
-                            <span class="tag">html/css</span>
                             <span class="tag">MySQL</span>
+                            <span class="tag">HTML/CSS</span>
                         </div>
                         <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">A fully responsive online shopping platform with advanced filtering, cart management, and secure checkout.</p>
+                        <p class="project-description">
+                            A fully responsive online shopping platform with advanced filtering, 
+                            cart management, and secure checkout system.
+                        </p>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="design">
-                    <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <span class="project-icon">🎨🎬</span>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://github.com/sanjit404" target="_blank" class="project-image">
+                        <div class="project-overlay"></div>
+                        <img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f093fb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23f5576c;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23grad2)'/%3E%3Ctext x='50%25' y='50%25' font-size='60' text-anchor='middle' dy='.3em'%3E🎨🎬%3C/text%3E%3C/svg%3E" alt="Brand Identity Design">
+                        <div class="project-link">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/sanjit404" class="project-link">View Project →</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
+                    </a>
+                    <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">Da Vinci Resolve</span>
                             <span class="tag">Canva</span>
                             <span class="tag">Figma</span>
                         </div>
                         <h3 class="project-title">Brand Identity Design</h3>
-                        <p class="project-description">Complete brand identity and design system for a modern tech startup, including logo, colors, video and components.</p>
+                        <p class="project-description">
+                            Complete brand identity and design system for a modern tech startup, 
+                            including logo, colors, video and components.
+                        </p>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <span class="project-icon">📱🔔</span>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://github.com/sanjit404/HabitTracker" target="_blank" class="project-image">
+                        <div class="project-overlay"></div>
+                        <img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%234facfe;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2300f2fe;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23grad3)'/%3E%3Ctext x='50%25' y='50%25' font-size='60' text-anchor='middle' dy='.3em'%3E📱🔔%3C/text%3E%3C/svg%3E" alt="Habit Tracker App">
+                        <div class="project-link">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/sanjit404/HabitTracker" class="project-link">View Project →</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
+                    </a>
+                    <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">Mobile</span>
                             <span class="tag">Firebase</span>
                         </div>
                         <h3 class="project-title">Habit Tracker App</h3>
-                        <p class="project-description">Progressive android app for daily task management with on-time remainder and offline support.</p>
+                        <p class="project-description">
+                            Progressive android app for daily task management with on-time 
+                            remainder and offline support.
+                        </p>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="app">
-                    <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                            <span class="project-icon">📌⚡</span>
+                <div class="project-card" data-aos="fade-up">
+                    <a href="https://github.com/sanjit404/PaailaV1" target="_blank" class="project-image">
+                        <div class="project-overlay"></div>
+                        <img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad4' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23fa709a;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23fee140;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23grad4)'/%3E%3Ctext x='50%25' y='50%25' font-size='60' text-anchor='middle' dy='.3em'%3E📌⚡%3C/text%3E%3C/svg%3E" alt="Location Tracker">
+                        <div class="project-link">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/sanjit404/PaailaV1" class="project-link">View Project →</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
+                    </a>
+                    <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">PHP</span>
                             <span class="tag">MySQL</span>
-                            <span class="tag">leaflet.js</span>
+                            <span class="tag">Leaflet.js</span>
                         </div>
                         <h3 class="project-title">Location Tracker</h3>
-                        <p class="project-description">Real-time location tracking with data visualization, custom reports, and performance metrics.</p>
+                        <p class="project-description">
+                            Real-time location tracking with data visualization, custom reports, 
+                            and performance metrics.
+                        </p>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
-                            <span class="project-icon">😎</span>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://sanjit404.github.io" target="_blank" class="project-image">
+                        <div class="project-overlay"></div>
+                        <img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad5' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2330cfd0;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23330867;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23grad5)'/%3E%3Ctext x='50%25' y='50%25' font-size='60' text-anchor='middle' dy='.3em'%3E😎%3C/text%3E%3C/svg%3E" alt="Portfolio Website">
+                        <div class="project-link">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://sanjit404.github.io" class="project-link">View Project →</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
+                    </a>
+                    <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">HTML5</span>
                             <span class="tag">CSS3</span>
                             <span class="tag">JavaScript</span>
                         </div>
                         <h3 class="project-title">Portfolio Website</h3>
-                        <p class="project-description">Creative portfolio with smooth animations, parallax effects, and custom cursor interactions.</p>
+                        <p class="project-description">
+                            Creative portfolio with smooth animations, parallax effects, and 
+                            custom cursor interactions.
+                        </p>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="app">
-                    <div class="project-image">
-                        <div class="project-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
-                            <span class="project-icon">🍕🍔</span>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://github.com/sanjit404/KhajaKham" target="_blank" class="project-image">
+                        <div class="project-overlay"></div>
+                        <img src="data:image/svg+xml,%3Csvg width='400' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad6' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23a8edea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23fed6e3;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23grad6)'/%3E%3Ctext x='50%25' y='50%25' font-size='60' text-anchor='middle' dy='.3em'%3E🍕🍔%3C/text%3E%3C/svg%3E" alt="Food Ordering App">
+                        <div class="project-link">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
                         </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/sanjit404/KhajaKham" class="project-link">View Project →</a>
-                        </div>
-                    </div>
-                    <div class="project-info">
+                    </a>
+                    <div class="project-content">
                         <div class="project-tags">
                             <span class="tag">Dart</span>
                             <span class="tag">Firebase</span>
                             <span class="tag">Mobile</span>
                         </div>
                         <h3 class="project-title">Online Food Ordering App</h3>
-                        <p class="project-description">Mobile food ordering application with order history, tracking, offline mode, and dynamic.</p>
+                        <p class="project-description">
+                            Mobile food ordering application with order history, tracking, 
+                            offline mode, and dynamic content.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -230,96 +372,143 @@
 
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
-                <span class="section-number">03</span>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">My Expertise</span>
                 <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-divider"></div>
             </div>
-            <div class="skills-content">
-                <div class="skill-category">
-                    <h3 class="category-title">Frontend</h3>
-                    <div class="skill-items">
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="category-header">
+                        <div class="category-icon">🎨</div>
+                        <h3 class="category-title">Frontend</h3>
+                    </div>
+                    <div class="skill-list">
                         <div class="skill-item">
-                            <div class="skill-name">HTML5 / CSS3</div>
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
+                                <div class="skill-progress" style="--progress: 95%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">JavaScript / TypeScript</div>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript / TypeScript</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
+                                <div class="skill-progress" style="--progress: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">React / Next.js</div>
+                            <div class="skill-info">
+                                <span class="skill-name">React / Next.js</span>
+                                <span class="skill-percent">30%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="30"></div>
+                                <div class="skill-progress" style="--progress: 30%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">Flutter</div>
+                            <div class="skill-info">
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                                <div class="skill-progress" style="--progress: 85%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3 class="category-title">Backend</h3>
-                    <div class="skill-items">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">⚙️</div>
+                        <h3 class="category-title">Backend</h3>
+                    </div>
+                    <div class="skill-list">
                         <div class="skill-item">
-                            <div class="skill-name">Node.js / Express</div>
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js / Express</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="60"></div>
+                                <div class="skill-progress" style="--progress: 60%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">Python / Django</div>
+                            <div class="skill-info">
+                                <span class="skill-name">Python / Django</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="65"></div>
+                                <div class="skill-progress" style="--progress: 65%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">Firebase / MySQL</div>
+                            <div class="skill-info">
+                                <span class="skill-name">Firebase / MySQL</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                                <div class="skill-progress" style="--progress: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">REST APIs</div>
+                            <div class="skill-info">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="60"></div>
+                                <div class="skill-progress" style="--progress: 60%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3 class="category-title">Tools & Others</h3>
-                    <div class="skill-items">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">🛠️</div>
+                        <h3 class="category-title">Tools & Others</h3>
+                    </div>
+                    <div class="skill-list">
                         <div class="skill-item">
-                            <div class="skill-name">Git / GitHub</div>
+                            <div class="skill-info">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="92"></div>
+                                <div class="skill-progress" style="--progress: 92%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">Docker / CI/CD</div>
+                            <div class="skill-info">
+                                <span class="skill-name">Docker / CI/CD</span>
+                                <span class="skill-percent">50%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="50"></div>
+                                <div class="skill-progress" style="--progress: 50%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">Figma / Blender</div>
+                            <div class="skill-info">
+                                <span class="skill-name">Figma / Blender</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+                                <div class="skill-progress" style="--progress: 80%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-name">Unity / Unreal</div>
+                            <div class="skill-info">
+                                <span class="skill-name">Unity / Unreal</span>
+                                <span class="skill-percent">50%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="50"></div>
+                                <div class="skill-progress" style="--progress: 50%"></div>
                             </div>
                         </div>
                     </div>
@@ -330,59 +519,98 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Let's Connect</span>
                 <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
             </div>
+            
             <div class="contact-content">
-                <div class="contact-text">
-                    <h3 class="contact-heading">Let's work together</h3>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div class="contact-details">
-                                <div class="contact-label">Email</div>
-                                <a href="mailto:your.email@example.com">sanjitpoudel7@gmail.com</a>
+                <div class="contact-info" data-aos="fade-right">
+                    <h3 class="contact-title">Let's work together!</h3>
+                    <p class="contact-text">
+                        I'm always excited to discuss new projects, creative ideas, or opportunities 
+                        to be part of your vision. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <a href="/cdn-cgi/l/email-protection#2457454a4e4d50544b5140414813644349454d480a474b49" class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📱</div>
-                            <div class="contact-details">
-                                <div class="contact-label">Phone</div>
-                                <a href="tel:+1234567890">+977 9761815785</a>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value"><span class="__cf_email__" data-cfemail="8dfeece3e7e4f9fde2f8e9e8e1bacdeae0ece4e1a3eee2e0">[email&#160;protected]</span></span>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-details">
-                                <div class="contact-label">Location</div>
-                                <span>Kathmandu, Nepal</span>
+                        </a>
+                        
+                        <a href="tel:+9779761815785" class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+977 9761815785</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Kathmandu, Nepal</span>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="social-links">
-                        <a href="https://github.com/sanjit404" target="_blank" class="social-link">GitHub</a>
-                        <a href="https://linkedin.com/in/SanjitPoudel" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="https://github.com/sanjit404" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/SanjitPoudel" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <div class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -390,11 +618,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2026 sanjit404 . All rights reserved.</p>
-                <p class="footer-tagline">Crafted with passion and code :D</p>
+                <p class="footer-text">&copy; 2026 Sanjit404. All rights reserved.</p>
+                <p class="footer-love">Made with <span class="heart">passion</span> and lots of <span class="coffee">code.</span></p>
             </div>
         </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5 12 12 5 19 12"/>
+        </svg>
+    </button>
 
     <script src="script.js"></script>
 </body>
